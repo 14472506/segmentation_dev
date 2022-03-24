@@ -3,7 +3,6 @@ from torch import nn
 import torch.nn.functional as F
 import math
 
-
 def points_nms(heat, kernel=2):
     # kernel must be 2
     hmax = nn.functional.max_pool2d(
